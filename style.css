@@ -1,0 +1,60 @@
+.body{
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+.header{
+    text-align: center;
+}
+
+.header{
+    background-color: #00357a;
+    color: white;
+    padding: 30px;
+}
+
+.content{
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+.content h2{
+    color: 00357a;
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+
+}
+
+.content h3{
+    color: #00357a;
+}
+
+.content p{
+    line-height: 1.6;   
+}
+
+.content img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content a{
+    color: #00357a;
+}
+
+.content li{
+    margin-bottom: 8px;
+}
+
+#foother{
+    text-align: center;
+    background-color: #00357a;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    margin-top: 30px;
+}
