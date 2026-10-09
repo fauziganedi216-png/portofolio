@@ -1,99 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
 
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
 
-</head>
-<body>
-    <div class="header">
-        
-        <h1>Aku Fauzi Zahi Ganedi</h1>
-        <p>Saya Mahasiswa</p>
-        
-    </div>
+    <title>my projeck</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-    <div class="content">
-        <p>Selamat datang di portofolio</p>
-        
-        <img src="oji.png" style="height:200px ;" width="200px">
+    <style type="text/css">
+      .container {
+        width: 800px;
+        margin: 0 auto;
+      }
+      .header {
+        background-color: #aa8200;
+        min-height: 50px;
+        text-align: center;
+      }
+      .content {
+        text-align: center;
+        background-color: white;
+        min-height: 500px;
+        overflow: auto;
+      }
+      .foother {
+        font-size: 30px;
+        background-color:#aa8200;
+        min-width: 50px;
+        padding: 20px;
+        text-align: center;
+        padding: 20px;
+        text-align: center;
+      }
+      .logo img {
+        width: 200px;
+      }
+      .menu ul {
+        padding: 0;
+      }
+      .menu ul li {
+        display: inline-block;
+        position: relative; 
+      }
+      .menu ul li a {
+        padding: 10px 20px;
+        text-decoration: none;
+      }
+      .thumbnail {
+        background-color: white;
+        text-align: center;
+        padding: 10px;
+        width: 225px;
+        margin: 10px;
+        float: left;
+      }
+      .thumbnail img {
+        width: 190px;
+      }
+      ul.submenu {
+        background-color: #eee;
+        border: 1px solid #ccc;
+        text-align: left;
+        position: absolute; 
+        top: 20px; 
+        left: 0; 
+        display: none;
+      }
+      ul.submenu li {
+        display: block; 
+      }
+      ul.submenu li a {
+        display: block; 
+        padding: 5px 10px; 
+      }
+      .menu ul li:hover ul.submenu  { 
+        display: block;
+     } 
+     .jumbotron {
+        font-family: 'Raleway', sans-serif; 
+        width: 100%;
+        padding: 80px 40px; 
+        box-sizing: border-box; 
+        text-align: center;
+        color: white;
+        background-color: #aaa;
+        background-image: url(./gambar/cafe.jpg);
+        position: relative; 
+     } 
+     .overlay {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; 
+        height: 100%; 
+        background-color: black;
+        opacity: 0.4;
+    } 
+    .jumbotron h2,
+    .jumbotron p {
+         position: relative; 
+    } 
+    </style>
+  </head>
 
-        <h2>About Me</h2>
-            <p>Halo, saya Fauzi Zahi Ganedi. Saya adalah mahasiswa yang tertarik dengan dunia teknologia dan web programing</p>
-            <p>Saat ini saya sedang belajar membuat website menggunakan HTML,CSS, dan JAVA SCRIP</p>
-
-        <h2>Education</h2>
-
-        <ul>
-
-            <li>STIKOM El Rahma</li>
-            <li>Program studi Teknik Informatika</li>
-
-        </ul>
-
-        <h2>My Skills</h2>
-
-        <ol>
-
-            <li>HTML</li>
-            <li>CSS</li>
-            <li></li>
-
-        </ol>
-
-        <h2>My Hobbies</h2>
-
-        <ol>
-
-            <li>Putsal</li>
-            <li>Hiking</li>
-            <li>Ngoding</li>
-            <li>Main Efootbal</li>
-
-        </ol>
-        
-        <h2>My Project</h2>
-        
-        <h3>1. website portofolio</h3>
-        <p>website sederhana yang saya buat untuk memperkenalkan diri</p>
-
-        <h3>2. Push Efootbal Divisi 1</h3>
-        <p>Menjadi yang terbaik dari yang terbaik</p>
-
-        <h2>contact me</h2>
-        <p>Jika ingin menghubungi saya, silakan melalui:</p>
-
-        <ul>
-            <li>
-
-                Email:
-                 <a href="mailto:fauziganedi216@gmail.com">fauziganedi216@Gmail.com</a>
-
-            </li>
-
-            <li>
-
-                Instagram:
-                <a href="https://www.instagram.com/?hl=en">@zahiganedi</a>
-            </li>
-
-            <li>
-
-                GitHub:
-                <a href="https://.com/" target="_blank">GitHub saya</a>
-
-            </li>
-        </ul>
-
-        <div id="foother">
-            <p>Copyright 2026 Fauzi Zahi Ganedi</p>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img
+            src="./gambar/logo.jpg"
+          />
         </div>
 
+        <div class="menu">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#">About</a> 
+                <ul class="submenu"> 
 
+                    <li><a href="#">CV</a></li> 
+                    <li><a href="#">Education</a></li> 
+                    <li><a href="#">Portfolio</a></li> 
 
+                </ul>
+             </li>
+            
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="jumbotron">
+            <div class="overlay"></div> 
+            <h2>Welcome to My Homepage</h2> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor necessitatibus quae voluptate explicabo architecto fugiat asperiores illo quibusdam qui mollitia, porro fugit. Illum sapiente modi, ut harum aliquam accusamus unde.</p> 
+
+        </div>
+
+        
+      <div class="content">
+        <h1>my product</h1>
+
+        <!-- ini satu 1 -->
+        <div class="thumbnail">
+          <img
+            src="https://www.tokomesin.com/wp-content/uploads/2017/09/cara-membuat-roti-bakar-tokomesin6.jpg"
+          />
+          <h2>Roti Bakar</h2>
+          <p>Rp 20.000</p>
+        </div>
+
+        <!-- ini dua 2 -->
+        <div class="thumbnail">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnAvECiSe0aDU164fQ2KBAgYR7XHutWIX93-OY9dvs-Mm18Qaz6QkrQ0U&s=10"
+          />
+          <h2>Kopi Susu</h2>
+          <p>Rp 50.000</p>
+        </div>
+
+        <!-- ini tiga 3 -->
+        <div class="thumbnail">
+          <img style="height: 160px;"
+            src="https://cdn.yummy.co.id/content-images/images/20220829/v9QhXWKy0BkPtdVCU5fTePAgEzSQZRRq-31363631373537333932d41d8cd98f00b204e9800998ecf8427e.jpg?x-oss-process=image/resize,w_388,h_388,m_fixed,x-oss-process=image/format,webp"
+          />
+          <h2>Pisang Keju</h2>
+          <p>Rp 30.000</p>
+        </div>
+
+        <!-- ini empat4 -->
+        <div class="thumbnail">
+          <img
+            src="https://static.promediateknologi.id/crop/0x0:0x0/1200x0/webp/photo/p1/294/2025/11/10/Hops-2025-11-10T130655549-4167125760.png"/>
+          <h2>Matcha</h2>
+          <p>Rp 30.000</p>
+        </div>
+
+        <!-- ini lima 5 -->
+        <div class="thumbnail">
+          <img
+            src="https://asset.kompas.com/crops/HQT4tBdS0Z2gfOwkNzF3r9hWJbQ=/3x0:700x465/1200x800/data/photo/2021/02/14/6028c0a3d34a9.jpg"/>
+          <h2>Cerepes crispy</h2>
+          <p>Rp 30.000</p>
+        </div>
+
+        <!-- ini enam 6 -->
+        <div class="thumbnail">
+          <img
+            src="https://img-global.cpcdn.com/recipes/08b6e02bad8e5c33/200x200f0.5_0.512724_1.0q80/milo-lava-ice-foto-resep-utama.jpg"/>
+          <h2>Choco lava</h2>
+          <p>Rp 30.000</p>
+        </div>
+      </div>
+
+      <div class="foother">
+        <p>copyright 2018 my page</p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
